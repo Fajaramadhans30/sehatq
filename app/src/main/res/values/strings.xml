@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">SehatQ Test</string>
+
+    <string name="user_exists">User already logged in</string>
+    <string name="sign_in_facebook">Sign in with Facebook</string>
+    <string name="sign_in_google">Sign in with Google</string>
+    <string name="logout_text">Sign out</string>
+    <string name="intent_title">title</string>
+    <string name="intent_image">imageUrl</string>
+    <string name="price">price</string>
+    <string name="intent_desc">description</string>
+
+    <string name="facebook_app_id">221623114699507</string>
+    <string name="current_user">current_user</string>
+
+</resources>

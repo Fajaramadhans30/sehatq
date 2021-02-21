@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+<!--    <data>-->
+
+<!--        <variable-->
+<!--            name="vm"-->
+<!--            type="com.test.sehatqtest.viewmodel.HomeCategoryViewModel" />-->
+
+<!--        <variable-->
+<!--            name="adapter"-->
+<!--            type="com.test.sehatqtest.view.adapter.HomeCategoryAdapter" />-->
+
+<!--        <variable-->
+<!--            name="vm2"-->
+<!--            type="com.test.sehatqtest.viewmodel.HomeCategoryViewModel" />-->
+
+<!--        <variable-->
+<!--            name="adapter2"-->
+<!--            type="com.test.sehatqtest.view.adapter.HomeProductAdapter" />-->
+
+<!--    </data>-->
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.test.sehatqtest.view.fragment.HomeFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="horizontal"/>
+
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            app:layout_constraintBottom_toBottomOf="@+id/rv1"
+            app:layout_constraintTop_toBottomOf="@+id/rv1"
+            android:layout_margin="8dp"
+            android:padding="10dp"
+            android:background="#878787"/>
+
+        <LinearLayout
+            android:id="@+id/header_title_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/view">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|end"
+                android:layout_marginLeft="4dp"
+                android:text="Product Promo"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header_title_update"
+        android:id="@+id/rv2"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        tools:listitem="@layout/item_product"
+        >
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
